@@ -1,0 +1,27 @@
+body::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.16);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: hsla(220, 43%, 55%, 0.35);
+    border-radius: 4px;
+
+}
+
+.single-article-content p {
+    color: black;
+}
+
+/* Utilities */
+.g-width-180 {
+    width: 180px;
+}
+
+.img-cover {
+    object-fit: cover;
+    object-position: center;
+}
