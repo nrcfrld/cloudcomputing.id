@@ -24,10 +24,11 @@
     <link rel="stylesheet" href="./vendor/hs-megamenu/src/hs.megamenu.css" />
     <link rel="stylesheet" href="./vendor/hamburgers/hamburgers.min.css" />
     <link rel="stylesheet" href="./vendor/slick-carousel/slick/slick.css" />
-    <link rel="stylesheet" href="./vendor/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="./vendor/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./vendor/custombox/custombox.min.css">
 
     <!-- CSS Unify Theme -->
-    <link rel="stylesheet" href="assets/css/styles.bm-classic.css" />
+    <link rel="stylesheet" href="./assets/css/styles.bm-classic.css" />
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="assets/css/custom.css">
@@ -276,11 +277,12 @@
                                 </li>
                                 <li class="list-inline-item ml-auto">
                                     <i class="icon-eye u-line-icon-pro align-middle mr-1"></i>
-                                    <span class="g-letter-spacing-1">3821</span>
+                                    <span class="g-letter-spacing-1">234</span>
                                 </li>
                             </ul>
 
                             <hr class="g-brd-gray-light-v4 g-my-15">
+
                         </div>
 
                         <div class="single-article-content g-font-size-16 g-line-height-1_8 g-mb-30">
@@ -370,33 +372,69 @@
 
                         <!-- Social Shares -->
                         <div class="g-mb-30">
-                            <strong class="mb-2 d-inline-block">Bagikan artikel ini di :</strong>
-                            <ul class="list-inline text-uppercase mb-0">
-                                <li class="list-inline-item">
-                                    <a class="btn u-btn-outline-indigo g-font-size-10 rounded g-py-10 g-bg-white--hover g-color-indigo--hover"
-                                        href="#">
-                                        <i class="fa fa-facebook fa-fw"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="btn u-btn-outline-indigo g-font-size-10 rounded g-py-10 g-bg-white--hover g-color-indigo--hover"
-                                        href="#">
-                                        <i class="fa fa-twitter fa-fw"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="btn u-btn-outline-indigo g-font-size-10 rounded g-py-10 g-bg-white--hover g-color-indigo--hover"
-                                        href="#">
-                                        <i class="fa fa-whatsapp fa-fw"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="btn u-btn-outline-indigo g-font-size-10 rounded g-py-10 g-bg-white--hover g-color-indigo--hover"
-                                        href="#">
-                                        <i class="fa fa-linkedin fa-fw"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                            <a href="#modal1" class="btn u-btn-outline-indigo" data-modal-target="#modal1"
+                                data-modal-effect="fadein">
+                                Bagikan artikel ini <i class="fa fa-share-square-o fa-fw"></i>
+                            </a>
+
+                            <!-- Demo modal window -->
+                            <div id="modal1" class="text-left g-width-70x g-bg-white g-overflow-y-auto g-pa-20 rounded"
+                                style="display: none;">
+                                <button type="button" class="close outline-focus-none cursor-pointer-hover"
+                                    onclick="Custombox.modal.close();">
+                                    <i class="hs-icon hs-icon-close"></i>
+                                </button>
+                                <h4 class="g-mb-10">Bagikan artikel</h4>
+                                <p class="g-color-black-opacity-0_8">Sebarkan manfaat lebih banyak kepada orang lain
+                                    dengan
+                                    membagikan hal menarik yang baru anda temukan</p>
+                                <div class="form-group g-mb-20">
+                                    <div class="input-group g-brd-primary--focus g-mb-10">
+                                        <input class="form-control form-control-md rounded-left pr-0" type="text"
+                                            id="urlToCopy">
+                                        <button type="button"
+                                            class="input-group-addon d-flex align-items-center g-bg-white g-color-gray-light-v1 rounded-right outline-focus-none cursor-pointer-hover"
+                                            id="buttonCopyToClipboard">
+                                            <i class="fa fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <ul class="list-inline text-uppercase mb-0">
+                                    <li class="list-inline-item g-mr-10 g-mb-10">
+                                        <a class="btn u-btn-facebook g-font-size-12 rounded g-px-20--sm g-py-10"
+                                            href="https://www.facebook.com/sharer/sharer.php?u=https://www.cloudcomputing.id/news/aws-bangun-pusat-data-di-indonesia-senilai-rp-35-triliun"
+                                            target="_blank">
+                                            <i class="fa fa-fw fa-facebook g-mr-5--sm"></i> <span
+                                                class="g-hidden-xs-down">Share on Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item g-mr-10 g-mb-10">
+                                        <a class="btn u-btn-twitter g-font-size-12 rounded g-px-20--sm g-py-10"
+                                            href="https://twitter.com/share?url=https://www.cloudcomputing.id/news/aws-bangun-pusat-data-di-indonesia-senilai-rp-35-triliun&amp;text=AWS Bangun Pusat Data di Indonesia Senilai Rp 35 Triliun&amp;via=cloudcomput1ng"
+                                            target="_blank">
+                                            <i class="fa fa-fw fa-twitter g-mr-5--sm"></i> <span
+                                                class="g-hidden-xs-down">Tweet on Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item g-mr-10 g-mb-10">
+                                        <a class="btn u-btn-linkedin g-font-size-12 rounded g-px-20--sm g-py-10"
+                                            href="https://www.linkedin.com/shareArticle?url=https://www.cloudcomputing.id/news/aws-bangun-pusat-data-di-indonesia-senilai-rp-35-triliun&amp;title=AWS Bangun Pusat Data di Indonesia Senilai Rp 35 Triliun&amp;summary=AWS telah merealisasikan investasi untuk membangun pusat data (data center) di Indonesia senilai US$ 2,5 miliar atau hampir 35 triliun.&amp;source=https://www.cloudcomputing.id/news/aws-bangun-pusat-data-di-indonesia-senilai-rp-35-triliun"
+                                            target="_blank">
+                                            <i class="fa fa-fw fa-linkedin g-mr-5--sm"></i><span
+                                                class="g-hidden-xs-down">Share on LinkedIn</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item g-mr-10 g-mb-10">
+                                        <a class="btn u-btn-whatsapp g-font-size-12 rounded g-px-20--sm g-py-10"
+                                            href="whatsapp://send?text=https://www.cloudcomputing.id/news/aws-bangun-pusat-data-di-indonesia-senilai-rp-35-triliun"
+                                            target="_blank">
+                                            <i class="fa fa-fw fa-whatsapp g-mr-5--sm"></i><span
+                                                class="g-hidden-xs-down">Share on WhatsApp</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Demo modal window -->
                         </div>
                         <!-- End Social Shares -->
 
@@ -458,7 +496,7 @@
                             </div>
 
                             <div class="row">
-                                <!-- Article Video -->
+                                <!-- Article -->
                                 <div class="col-lg-4 col-sm-6">
                                     <article>
                                         <figure class="u-shadow-v25 g-pos-rel g-mb-20">
@@ -472,15 +510,15 @@
                                             </figcaption>
                                         </figure>
 
-                                        <h3 class="g-font-size-16 g-mb-10">
+                                        <h3 class="g-font-size-16 g-mb-10 font-weight-bold">
                                             <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover"
                                                 href="#">Clark Valberg is a new CEO of InVision..</a>
                                         </h3>
                                     </article>
                                 </div>
-                                <!-- End Article Video -->
+                                <!-- End Article -->
 
-                                <!-- Article Video -->
+                                <!-- Article -->
                                 <div class="col-lg-4 col-sm-6">
                                     <article>
                                         <figure class="u-shadow-v25 g-pos-rel g-mb-20">
@@ -494,15 +532,15 @@
                                             </figcaption>
                                         </figure>
 
-                                        <h3 class="g-font-size-16 g-mb-10">
+                                        <h3 class="g-font-size-16 g-mb-10 font-weight-bold">
                                             <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover"
                                                 href="#">How to run a ticket: Best 10 point..</a>
                                         </h3>
                                     </article>
                                 </div>
-                                <!-- End Article Video -->
+                                <!-- End Article -->
 
-                                <!-- Article Video -->
+                                <!-- Article -->
                                 <div class="col-lg-4 col-sm-6">
                                     <article>
                                         <figure class="u-shadow-v25 g-pos-rel g-mb-20">
@@ -516,13 +554,13 @@
                                             </figcaption>
                                         </figure>
 
-                                        <h3 class="g-font-size-16 g-mb-10">
+                                        <h3 class="g-font-size-16 g-mb-10 font-weight-bold">
                                             <a class="u-link-v5 g-color-gray-dark-v1 g-color-primary--hover"
                                                 href="#">Clark Valberg is a new CEO of InVision..</a>
                                         </h3>
                                     </article>
                                 </div>
-                                <!-- End Article Video -->
+                                <!-- End Article -->
                             </div>
                         </div>
                     </article>
@@ -530,8 +568,30 @@
                     <div id="stickyblock-end"></div>
                 </div>
                 <!-- End Articles Content -->
+
                 <!-- Sidebar -->
                 <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Bagikan di sosial media</h4>
+                            <p>Bagikan hal bermanfaat ke teman-temanmu</p>
+                            <div class="flex">
+                                <a href="#" class="btn u-btn-outline-indigo">
+                                    <i class="fa fa-facebook fa-fw"></i>
+                                </a>
+                                <a href="#" class="btn u-btn-outline-indigo">
+                                    <i class="fa fa-twitter fa-fw"></i>
+                                </a>
+                                <a href="#" class="btn u-btn-outline-indigo">
+                                    <i class="fa fa-linkedin fa-fw"></i>
+                                </a>
+                                <a href="#" class="btn u-btn-outline-indigo">
+                                    <i class="fa fa-whatsapp fa-fw"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="g-mb-50 sticky-top pt-3">
                         <!-- Tulisan Terpopuler -->
                         <div class="g-mb-20">
@@ -559,11 +619,11 @@
                                                 href="#">
                                                 design
                                             </a>
-                                            <h5 class="font-weight-bold h4 mt-3">Stylish things to do, see and
+                                            <h5 class="font-weight-bold h4 mt-2">Stylish things to do, see and
                                                 purchase
                                                 only
                                                 this week</h5>
-                                            <span>July 20, 2019</span>
+                                            <span class="g-color-gray-dark-v4">July 20, 2019</span>
                                         </div>
                                     </article>
                                 </div>
@@ -579,11 +639,11 @@
                                                 href="#">
                                                 design
                                             </a>
-                                            <h5 class="font-weight-bold h4 mt-3">Stylish things to do, see and
+                                            <h5 class="font-weight-bold h4 mt-2">Stylish things to do, see and
                                                 purchase
                                                 only
                                                 this week</h5>
-                                            <span>July 20, 2019</span>
+                                            <span class="g-color-gray-dark-v4">July 20, 2019</span>
                                         </div>
                                     </article>
                                 </div>
@@ -599,11 +659,11 @@
                                                 href="#">
                                                 design
                                             </a>
-                                            <h5 class="font-weight-bold h4 mt-3">Stylish things to do, see and
+                                            <h5 class="font-weight-bold h4 mt-2">Stylish things to do, see and
                                                 purchase
                                                 only
                                                 this week</h5>
-                                            <span>July 20, 2019</span>
+                                            <span class="g-color-gray-dark-v4">July 20, 2019</span>
                                         </div>
                                     </article>
                                 </div>
@@ -612,7 +672,7 @@
 
                             <div class="non-carousel d-none d-lg-block">
                                 <!-- Article -->
-                                <article class="media mb-3" data-animation="fadeIn" data-animation-delay="500"
+                                <article class="media mb-3" data-animation="fadeIn" data-animation-delay="300"
                                     data-animation-duration="1000">
                                     <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#">
                                         <img class="g-width-125 g-height-90 img-cover"
@@ -637,7 +697,7 @@
                                 </article>
                                 <!-- End Article -->
                                 <!-- Article -->
-                                <article class="media mb-3" data-animation="fadeIn" data-animation-delay="500"
+                                <article class="media mb-3" data-animation="fadeIn" data-animation-delay="400"
                                     data-animation-duration="1000">
                                     <a class="d-flex u-shadow-v25 align-self-center mr-3" href="#">
                                         <img class="g-width-125 g-height-90 img-cover"
@@ -807,6 +867,7 @@
     <script src="./vendor/hs-megamenu/src/hs.megamenu.js"></script>
     <script src="./vendor/slick-carousel/slick/slick.js"></script>
     <script src="./vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script src="./vendor/custombox/custombox.min.js"></script>
 
     <!-- JS Unify -->
     <script src="./vendor/js/hs.core.js"></script>
@@ -819,6 +880,7 @@
     <script src="./vendor/js/components/hs.carousel.js"></script>
     <script src="./vendor/js/components/hs.popup.js"></script>
     <script src="./vendor/js/components/hs.go-to.js"></script>
+    <script src="./vendor/js/components/hs.modal-window.js"></script>
 
     <!-- JS Customization -->
     <script src="./vendor/js/custom.js"></script>
@@ -826,6 +888,9 @@
     <!-- JS Plugins Init. -->
     <script>
         $(document).on('ready', function () {
+            // initialization of popups
+            $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+
             // initialization of header
             $.HSCore.components.HSHeader.init($('#js-header'));
             $.HSCore.helpers.HSHamburgers.init('.hamburger');
@@ -861,6 +926,15 @@
 
             // initialization of popups
             $.HSCore.components.HSPopup.init('.js-fancybox');
+
+            // init copy url to clipboard
+            const text = window.location.href;
+            const urlToCopy = $('#urlToCopy')
+            urlToCopy.val(text)
+            $('#buttonCopyToClipboard').on("click", function () {
+                urlToCopy.select()
+                document.execCommand('copy');
+            })
         });
 
         $(window).on('load', function () {

@@ -21,7 +21,39 @@ body::-webkit-scrollbar-thumb {
     width: 180px;
 }
 
+.outline-focus-none:focus {
+    outline: none;
+}
+
+.cursor-pointer-hover:hover {
+    cursor: pointer;
+}
+
+.u-btn-linkedin {
+    color: #fff;
+    background-color: #0077B5;
+}
+
+.u-btn-linkedin:hover {
+    color: #fff;
+    background-color: #0b83c4;
+}
+
+.u-btn-whatsapp {
+    color: #fff;
+    background-color: #075e54;
+}
+
+.u-btn-whatsapp:hover {
+    color: #fff;
+    background-color: #086d61;
+}
+
 .img-cover {
     object-fit: cover;
     object-position: center;
+}
+
+p {
+    color: unset !important;
 }
